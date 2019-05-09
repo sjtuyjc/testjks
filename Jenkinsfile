@@ -4,7 +4,7 @@ node {
         echo 'Building....'
     }
     stage('Test') {
-        echo 'Building....'
+        sh a1.py
     }
     stage('Deploy') {
         echo 'Deploying....'
