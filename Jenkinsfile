@@ -3,7 +3,9 @@ node {
         echo 'Building....'
     }
     stage('Test') {
-        sh "python3 a1.py"
+            steps {
+                sh 'a1.py'
+            }
     }
     stage('Deploy') {
         echo 'Deploying....'
