@@ -4,7 +4,7 @@ node {
     }
     stage('Test') {
             steps {
-                sh 'a1.py'
+                sh label: '', script: 'python3 a1.py'
             }
     }
     stage('Deploy') {
