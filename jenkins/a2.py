@@ -1,4 +1,4 @@
 import os
 
 print(os.getcwd())
-os.system('code/a1.py')
+os.system('python code/a1.py')
