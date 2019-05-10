@@ -8,7 +8,7 @@ pipeline {
         }
         stage('Test') {
             steps {
-                sh label: '', script: 'python a1.py'
+                sh label: '', script: 'python a2.py'
             }
         }
         stage('Deploy') {
