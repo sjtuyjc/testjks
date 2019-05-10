@@ -15,6 +15,11 @@ pipeline {
             steps {
                 sh label: '', script: 'python code/a1.py'
             }
+            post {
+                always {
+                    emailext body: 'success', subject: 'project testjks tested', to: 'lvgui@chipltech.com'
+                }
+            }
         }
     }
 }
